@@ -2,7 +2,7 @@
 
 /**
  * main - outputs base 10 numbers
- * Return: always 0  
+ * Return: always 0
  */
 int main(void)
 {
