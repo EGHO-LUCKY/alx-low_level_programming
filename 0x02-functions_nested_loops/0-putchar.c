@@ -1,12 +1,15 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - prints _putchar
- * Return: outputs _putchar
+ * Return: always 0
  */
 
 int main(void)
 {
-	printf("_putchar");
+	char ch;
+	while(ch)
+		_putchar(ch);
+	_putchar("\n");
 	return (0);
 }
