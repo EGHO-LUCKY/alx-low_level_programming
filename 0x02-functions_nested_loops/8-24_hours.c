@@ -5,11 +5,17 @@
  */
 void jack_bauer(void)
 {
-	char *ch = {00..23}:{00..59};
-
-	while (*ch)
+	int h, m;
+	for (h = 0 ; h < 24 ; h++)
 	{
-		printf("%s", *ch);
-		ch++;
+		for (m = 0 ; m < 60 ; m++)
+		{
+			_putchar((h / 10) + '0');
+			_putchar((h % 10) + '0');
+			_putchar(':');
+			_putchar((m / 10) + '0');
+			_putchar((m % 10) + '0');
+			_putchar('\n');
+		}
 	}
 }
