@@ -12,13 +12,13 @@ void print_to_98(int n)
 	{
 		if (n < 98)
 		{
-			putchar(n, '0');
+			putchar(n);
 			putchar(',');
 			putchar(' ');
 		}
 		else
 		{
-			putchar(n, '0');
+			putchar(n);
 			putchar('\n');
 		}
 	}
