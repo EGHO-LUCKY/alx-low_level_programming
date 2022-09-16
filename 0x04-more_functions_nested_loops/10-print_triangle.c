@@ -5,27 +5,27 @@
  * @size: size of the triangle
  * Return: triangle of '#'s
  */
+
 void print_triangle(int size)
 {
-	int sp, ro, tr;
+	int i, j;
+	int a = 0;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (ro = 0; ro <= (size - 1); ro++)
+		for (i = size ; i != 0 ; i--)
 		{
-			for (sp = 0; sp < (size - 1) - ro; sp++)
+			a++;
+			for (j = 1 ; j < i ; j++)
 			{
 				_putchar(' ');
 			}
-			for (tr = 0; tr <= ro; tr++)
-			{
+			for (j = 0 ; j < a ; j++)
 				_putchar('#');
-			}
 			_putchar('\n');
 		}
+
 	}
+	else
+		_putchar('\n');
 }
