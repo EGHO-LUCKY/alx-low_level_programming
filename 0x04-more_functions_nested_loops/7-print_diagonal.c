@@ -5,24 +5,24 @@
  * @n: input number of times '\' should be printed
  * Return: a diagonal
  */
+
 void print_diagonal(int n)
 {
-	int co, sp;
+	int i, j;
 
-	if (n <= 0)
+	if (n > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (co = 1; co <= n; co++)
+		for (i = 1 ; i <= n ; i++)
 		{
-			for (sp = 1; sp < co; sp++)
+			for (j = 1 ; j < i ; j++)
 			{
-				_putchar(' ');
+				putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
 		}
+
 	}
+	else
+		_putchar('\n');
 }
