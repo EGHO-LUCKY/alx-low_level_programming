@@ -6,18 +6,20 @@
  * @src: string added
  * Return: returns conatenated word
  */
-
 char *_strcat(char *dest, char *src)
 {
-	int i, n = 0;
+	int i, j;
 
-	while (dest[n] != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-		n++;
+
 	}
-	for (i = 0; src[i] != '\0'; i++)
+
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		dest[n++] = src[i];
+		dest[i + j] = src[j];
 	}
+
+	dest[i + j] = '\0';
 	return (dest);
 }
